@@ -13,7 +13,7 @@ header {
     color: #fff;
     padding: 1em;
     text-align: center;
-    font-family: 'Celtic Hand', cursive; /* Adding a whimsical font */
+    font-family: 'MedievalSharp', cursive; /* Adding a whimsical font */
     font-size: 1.5em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -21,15 +21,6 @@ header {
 header h1 {
     margin: 0;
     font-size: 2em;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin: 1em 0 0;
 }
 
 nav ul li {
@@ -47,6 +38,12 @@ nav ul li a:hover {
     color: #228b22; /* Darker green */
     text-decoration: underline;
 }
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #228b22; /* Darker green */
+}
+
 
 /* Footer Styles */
 footer {
@@ -235,4 +232,11 @@ form {
     background-size: cover;
     background-position: center;
     color: #333;
+}
+
+
+
+.intro-text {
+    max-width: 65ch;
+    margin: 0 auto;
 }
