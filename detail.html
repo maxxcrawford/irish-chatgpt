@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details</title>
+    <link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Celtic+Hand&display=swap" rel="stylesheet">
+
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Destination Details</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="regions.html">Regions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sightseeing.html">Sightseeing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="destination-details">
+            <h2 id="destination-name"></h2>
+            <p id="destination-info"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Visit Ireland</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const destinationId = urlParams.get('id');
+            const destinationDetails = document.getElementById('destination-details');
+            const destinationName = document.getElementById('destination-name');
+            const destinationInfo = document.getElementById('destination-info');
+
+            fetch('data/sightseeing.json')
+                .then(response => response.json())
+                .then(data => {
+                    const destination = data.find(dest => dest.id == destinationId);
+                    if (destination) {
+                        destinationName.textContent = destination.name;
+                        destinationInfo.innerHTML = `
+                            <p>Latitude: ${destination.latitude}</p>
+                            <p>Longitude: ${destination.longitude}</p>
+                            <p>Altitude: ${destination.altitude}</p>
+                            <p>Address: ${destination.local_address}</p>
+                            <p>Star Rating: ${destination.star_rating}</p>
+                            <p>Cost: ${destination.cost}</p>
+                        `;
+                        fetchWeather(destination.latitude, destination.longitude);
+                    }
+                });
+
+            function fetchWeather(latitude, longitude) {
+                fetch(`https://weather.apis.ie/forecasts/${latitude},${longitude}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const weatherInfo = `
+                            <p>Temperature: ${data.temperature} °C</p>
+                            <p>Precipitation: ${data.precipitation} mm</p>
+                        `;
+                        destinationInfo.innerHTML += weatherInfo;
+                    });
+            }
+        });
+    </script>
+</body>
+</html>

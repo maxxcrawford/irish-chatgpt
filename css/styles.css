@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+header {
+    background-color: #2e8b57; /* Dark green */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Celtic Hand', cursive; /* Adding a whimsical font */
+    font-size: 1.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em 0 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #32cd32; /* Green */
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #228b22; /* Darker green */
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2e8b57;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Styles */
+main {
+    padding: 2em;
+}
+
+h2 {
+    text-align: center;
+    color: #2e8b57;
+}
+
+/* Slider Styles */
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#filter-cost {
+    margin: 20px 0;
+}
+
+/* Select Dropdown Styles */
+select {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li a {
+    text-decoration: none;
+    color: #2e8b57;
+    font-weight: bold;
+}
+
+/* Showcase Image */
+.showcase img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+/* form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #2e8b57;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form input[type="submit"] {
+    background-color: #2e8b57;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.75em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #276d4b;
+} */
+/* Contact Form Styling */
+form {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #008000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #006400;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('images/irish-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+
+/* Card Grid Styles */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1em;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #2e8b57;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

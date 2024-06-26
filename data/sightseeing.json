@@ -1,0 +1,752 @@
+[
+    {
+        "id": 1,
+        "name": "Cliffs of Moher",
+        "latitude": 52.9715,
+        "longitude": -9.4265,
+        "local_address": "Lislorkan North, Liscannor, Co. Clare, Ireland",
+        "star_rating": 4.8,
+        "cost": 10,
+        "region": "west"
+    },
+    {
+        "id": 2,
+        "name": "Blarney Castle",
+        "latitude": 51.9292,
+        "longitude": -8.5705,
+        "local_address": "Monacnapa, Blarney, Co. Cork, Ireland",
+        "star_rating": 4.6,
+        "cost": 18,
+        "region": "south"
+    },
+    {
+        "id": 3,
+        "name": "Dublin Castle",
+        "latitude": 53.3429,
+        "longitude": -6.2674,
+        "local_address": "Dame St, Dublin 2, Ireland",
+        "star_rating": 4.5,
+        "cost": 12,
+        "region": "dublin"
+    },
+    {
+        "id": 4,
+        "name": "Kilmainham Gaol",
+        "latitude": 53.3420,
+        "longitude": -6.3095,
+        "local_address": "Inchicore Rd, Kilmainham, Dublin 8, Ireland",
+        "star_rating": 4.7,
+        "cost": 8,
+        "region": "dublin"
+    },
+    {
+        "id": 5,
+        "name": "The Rock of Cashel",
+        "latitude": 52.5208,
+        "longitude": -7.8903,
+        "local_address": "St. Patrick's Rock, Cashel, Co. Tipperary, Ireland",
+        "star_rating": 4.6,
+        "cost": 10,
+        "region": "midlands"
+    },
+    {
+        "id": 6,
+        "name": "Ring of Kerry",
+        "latitude": 51.9480,
+        "longitude": -9.9173,
+        "local_address": "County Kerry, Ireland",
+        "star_rating": 4.8,
+        "cost": 0,
+        "region": "west"
+    },
+    {
+        "id": 7,
+        "name": "Guinness Storehouse",
+        "latitude": 53.3419,
+        "longitude": -6.2867,
+        "local_address": "St. James's Gate, Dublin 8, Ireland",
+        "star_rating": 4.5,
+        "cost": 20,
+        "region": "dublin"
+    },
+    {
+        "id": 8,
+        "name": "Trinity College and the Book of Kells",
+        "latitude": 53.3438,
+        "longitude": -6.2546,
+        "local_address": "College Green, Dublin 2, Ireland",
+        "star_rating": 4.7,
+        "cost": 14,
+        "region": "dublin"
+    },
+    {
+        "id": 9,
+        "name": "Killarney National Park",
+        "latitude": 52.0003,
+        "longitude": -9.5355,
+        "local_address": "Killarney, Co. Kerry, Ireland",
+        "star_rating": 4.9,
+        "cost": 0,
+        "region": "south"
+    },
+    {
+        "id": 10,
+        "name": "Newgrange",
+        "latitude": 53.6947,
+        "longitude": -6.4755,
+        "local_address": "Donore, Co. Meath, Ireland",
+        "star_rating": 4.6,
+        "cost": 7,
+        "region": "east"
+    },
+    {
+        "id": 11,
+        "name": "Bunratty Castle",
+        "latitude": 52.6961,
+        "longitude": -8.8146,
+        "local_address": "Bunratty West, Bunratty, Co. Clare, Ireland",
+        "star_rating": 4.5,
+        "cost": 15,
+        "region": "west"
+    },
+    {
+        "id": 12,
+        "name": "Connemara National Park",
+        "latitude": 53.5500,
+        "longitude": -9.9386,
+        "local_address": "Letterfrack, Co. Galway, Ireland",
+        "star_rating": 4.8,
+        "cost": 0,
+        "region": "west"
+    },
+    {
+        "id": 13,
+        "name": "Powerscourt Estate",
+        "latitude": 53.1847,
+        "longitude": -6.1863,
+        "local_address": "Enniskerry, Co. Wicklow, Ireland",
+        "star_rating": 4.6,
+        "cost": 10,
+        "region": "east"
+    },
+    {
+        "id": 14,
+        "name": "Glendalough",
+        "latitude": 53.0102,
+        "longitude": -6.3275,
+        "local_address": "Glendalough, Co. Wicklow, Ireland",
+        "star_rating": 4.7,
+        "cost": 0,
+        "region": "east"
+    },
+    {
+        "id": 15,
+        "name": "The Burren",
+        "latitude": 53.0626,
+        "longitude": -9.1434,
+        "local_address": "County Clare, Ireland",
+        "star_rating": 4.7,
+        "cost": 0,
+        "region": "west"
+    },
+    {
+        "id": 16,
+        "name": "Skellig Michael",
+        "latitude": 51.7700,
+        "longitude": -10.5400,
+        "local_address": "County Kerry, Ireland",
+        "star_rating": 4.9,
+        "cost": 40,
+        "region": "south"
+    },
+    {
+        "id": 17,
+        "name": "St. Patrick's Cathedral",
+        "latitude": 53.3394,
+        "longitude": -6.2711,
+        "local_address": "St Patrick's Close, Dublin 8, Ireland",
+        "star_rating": 4.5,
+        "cost": 8,
+        "region": "dublin"
+    },
+    {
+        "id": 18,
+        "name": "Dingle Peninsula",
+        "latitude": 52.1667,
+        "longitude": -10.2667,
+        "local_address": "County Kerry, Ireland",
+        "star_rating": 4.8,
+        "cost": 0,
+        "region": "south"
+    },
+    {
+        "id": 19,
+        "name": "The Aran Islands",
+        "latitude": 53.1167,
+        "longitude": -9.7000,
+        "local_address": "County Galway, Ireland",
+        "star_rating": 4.7,
+        "cost": 25,
+        "region": "west"
+    },
+    {
+        "id": 20,
+        "name": "Malahide Castle",
+        "latitude": 53.4508,
+        "longitude": -6.1554,
+        "local_address": "Malahide Demesne, Malahide, Co. Dublin, Ireland",
+        "star_rating": 4.5,
+        "cost": 12,
+        "region": "dublin"
+    },
+    {
+        "id": 21,
+        "name": "Phoenix Park",
+        "latitude": 53.3558,
+        "longitude": -6.3292,
+        "local_address": "Phoenix Park, Dublin 8, Ireland",
+        "star_rating": 4.8,
+        "cost": 0,
+        "region": "dublin"
+    },
+    {
+        "id": 22,
+        "name": "Muckross House and Gardens",
+        "latitude": 52.0140,
+        "longitude": -9.5013,
+        "local_address": "Killarney National Park, Muckross, Killarney, Co. Kerry, Ireland",
+        "star_rating": 4.7,
+        "cost": 9,
+        "region": "south"
+    },
+    {
+        "id": 23,
+        "name": "National Museum of Ireland",
+        "latitude": 53.3400,
+        "longitude": -6.2532,
+        "local_address": "Kildare St, Dublin 2, Ireland",
+        "star_rating": 4.6,
+        "cost": 0,
+        "region": "dublin"
+    },
+    {
+        "id": 24,
+        "name": "National Gallery of Ireland",
+        "latitude": 53.3418,
+        "longitude": -6.2527,
+        "local_address": "Merrion Square W, Dublin 2, Ireland",
+        "star_rating": 4.5,
+        "cost": 0,
+        "region": "dublin"
+    },
+    {
+        "id": 25,
+        "name": "Chester Beatty Library",
+        "latitude": 53.3423,
+        "longitude": -6.2684,
+        "local_address": "Dublin Castle, Dublin 2, Ireland",
+        "star_rating": 4.7,
+        "cost": 0,
+        "region": "dublin"
+    },
+    {
+        "id": 26,
+        "name": "Cork City Gaol",
+        "latitude": 51.8986,
+        "longitude": -8.4919,
+        "local_address": "Convent Ave, Sunday's Well, Cork, Ireland",
+        "star_rating": 4.6,
+        "cost": 10,
+        "region": "south"
+    },
+    {
+        "id": 27,
+        "name": "Slea Head Drive",
+        "latitude": 52.1333,
+        "longitude": -10.4167,
+        "local_address": "Dingle Peninsula, Co. Kerry, Ireland",
+        "star_rating": 4.8,
+        "cost": 0,
+        "region": "south"
+    },
+    {
+        "id": 28,
+        "name": "The Little Museum of Dublin",
+        "latitude": 53.3393,
+        "longitude": -6.2581,
+        "local_address": "15 St Stephen's Green, Dublin, Ireland",
+        "star_rating": 4.7,
+        "cost": 10,
+        "region": "dublin"
+    },
+    {
+        "id": 29,
+        "name": "Ashford Castle",
+        "latitude": 53.5331,
+        "longitude": -9.2858,
+        "local_address": "Cong, Co. Mayo, Ireland",
+        "star_rating": 4.9,
+        "cost": 25,
+        "region": "west"
+    },
+    {
+        "id": 30,
+        "name": "National Botanic Gardens",
+        "latitude": 53.3725,
+        "longitude": -6.2696,
+        "local_address": "Glasnevin, Dublin 9, Ireland",
+        "star_rating": 4.7,
+        "cost": 0,
+        "region": "dublin"
+    },
+    {
+        "id": 31,
+        "name": "Dublin Zoo",
+        "latitude": 53.3536,
+        "longitude": -6.3045,
+        "local_address": "Phoenix Park, Dublin 8, Ireland",
+        "star_rating": 4.6,
+        "cost": 17,
+        "region": "dublin"
+    },
+    {
+        "id": 32,
+        "name": "St. Stephen's Green",
+        "latitude": 53.3371,
+        "longitude": -6.2597,
+        "local_address": "St Stephen's Green, Dublin 2, Ireland",
+        "star_rating": 4.8,
+        "cost": 0,
+        "region": "dublin"
+    },
+    {
+        "id": 33,
+        "name": "Jameson Distillery Bow St.",
+        "latitude": 53.3480,
+        "longitude": -6.2776,
+        "local_address": "Bow St, Smithfield Village, Dublin 7, Ireland",
+        "star_rating": 4.7,
+        "cost": 25,
+        "region": "dublin"
+    },
+    {
+        "id": 34,
+        "name": "Lough Gur",
+        "latitude": 52.5197,
+        "longitude": -8.5386,
+        "local_address": "Bruff, Co. Limerick, Ireland",
+        "star_rating": 4.6,
+        "cost": 5,
+        "region": "midlands"
+    },
+    {
+        "id": 35,
+        "name": "Glenveagh National Park",
+        "latitude": 55.0333,
+        "longitude": -7.9667,
+        "local_address": "Churchill, Letterkenny, Co. Donegal, Ireland",
+        "star_rating": 4.8,
+        "cost": 0,
+        "region": "west"
+    },
+    {
+        "id": 36,
+        "name": "Dun Aonghasa",
+        "latitude": 53.1258,
+        "longitude": -9.7680,
+        "local_address": "Killeany, Co. Galway, Ireland",
+        "star_rating": 4.7,
+        "cost": 5,
+        "region": "west"
+    },
+    {
+        "id": 37,
+        "name": "Kilkenny Castle",
+        "latitude": 52.6503,
+        "longitude": -7.2493,
+        "local_address": "The Parade, Collegepark, Kilkenny, Ireland",
+        "star_rating": 4.6,
+        "cost": 8,
+        "region": "east"
+    },
+    {
+        "id": 38,
+        "name": "Wicklow Mountains National Park",
+        "latitude": 53.0793,
+        "longitude": -6.3476,
+        "local_address": "Glendalough, Co. Wicklow, Ireland",
+        "star_rating": 4.8,
+        "cost": 0,
+        "region": "east"
+    },
+    {
+        "id": 39,
+        "name": "Hook Lighthouse",
+        "latitude": 52.1241,
+        "longitude": -6.9317,
+        "local_address": "Hook Head, Co. Wexford, Ireland",
+        "star_rating": 4.7,
+        "cost": 7,
+        "region": "east"
+    },
+    {
+        "id": 40,
+        "name": "King John's Castle",
+        "latitude": 52.6683,
+        "longitude": -8.6238,
+        "local_address": "Nicholas St, Limerick, Ireland",
+        "star_rating": 4.5,
+        "cost": 13,
+        "region": "midlands"
+    },
+    {
+        "id": 41,
+        "name": "Rock of Dunamase",
+        "latitude": 53.0333,
+        "longitude": -7.2667,
+        "local_address": "Dunamase, Co. Laois, Ireland",
+        "star_rating": 4.6,
+        "cost": 0,
+        "region": "midlands"
+    },
+    {
+        "id": 42,
+        "name": "Charles Fort",
+        "latitude": 51.6973,
+        "longitude": -8.5121,
+        "local_address": "Summer Cove, Kinsale, Co. Cork, Ireland",
+        "star_rating": 4.5,
+        "cost": 8,
+        "region": "south"
+    },
+    {
+        "id": 43,
+        "name": "Lismore Castle",
+        "latitude": 52.1417,
+        "longitude": -7.9291,
+        "local_address": "Lismore, Co. Waterford, Ireland",
+        "star_rating": 4.8,
+        "cost": 10,
+        "region": "south"
+    },
+    {
+        "id": 44,
+        "name": "Trim Castle",
+        "latitude": 53.5547,
+        "longitude": -6.7894,
+        "local_address": "Castle St, Trim, Co. Meath, Ireland",
+        "star_rating": 4.6,
+        "cost": 5,
+        "region": "east"
+    },
+    {
+        "id": 45,
+        "name": "Westport House",
+        "latitude": 53.7996,
+        "longitude": -9.5321,
+        "local_address": "Quay Rd, Westport, Co. Mayo, Ireland",
+        "star_rating": 4.7,
+        "cost": 13,
+        "region": "west"
+    },
+    {
+        "id": 46,
+        "name": "Johnstown Castle",
+        "latitude": 52.2922,
+        "longitude": -6.5056,
+        "local_address": "Oldtown Ln, Johnstown, Co. Wexford, Ireland",
+        "star_rating": 4.5,
+        "cost": 8,
+        "region": "east"
+    },
+    {
+        "id": 47,
+        "name": "Galway City Museum",
+        "latitude": 53.2699,
+        "longitude": -9.0533,
+        "local_address": "Spanish Arch, Galway, Ireland",
+        "star_rating": 4.6,
+        "cost": 0,
+        "region": "west"
+    },
+    {
+        "id": 48,
+        "name": "Irish National Stud and Gardens",
+        "latitude": 53.1456,
+        "longitude": -6.8967,
+        "local_address": "Tully, Co. Kildare, Ireland",
+        "star_rating": 4.7,
+        "cost": 12,
+        "region": "east"
+    },
+    {
+        "id": 49,
+        "name": "Saint Fin Barre's Cathedral",
+        "latitude": 51.8958,
+        "longitude": -8.4811,
+        "local_address": "Bishop St, The Lough, Cork, Ireland",
+        "star_rating": 4.6,
+        "cost": 6,
+        "region": "south"
+    },
+    {
+        "id": 50,
+        "name": "Fota Wildlife Park",
+        "latitude": 51.8961,
+        "longitude": -8.3154,
+        "local_address": "Carrigtwohill, Co. Cork, Ireland",
+        "star_rating": 4.8,
+        "cost": 15,
+        "region": "south"
+    },
+    {
+        "id": 51,
+        "name": "Old Jameson Distillery",
+        "latitude": 53.3480,
+        "longitude": -6.2776,
+        "local_address": "Bow St, Smithfield Village, Dublin 7, Ireland",
+        "star_rating": 4.7,
+        "cost": 25,
+        "region": "dublin"
+    },
+    {
+        "id": 52,
+        "name": "Ben Bulben",
+        "latitude": 54.3588,
+        "longitude": -8.4935,
+        "local_address": "Drumcliffe, Co. Sligo, Ireland",
+        "star_rating": 4.8,
+        "cost": 0,
+        "region": "west"
+    },
+    {
+        "id": 53,
+        "name": "Waterford Crystal",
+        "latitude": 52.2583,
+        "longitude": -7.1119,
+        "local_address": "The Mall, Waterford, Ireland",
+        "star_rating": 4.7,
+        "cost": 14,
+        "region": "east"
+    },
+    {
+        "id": 54,
+        "name": "Dún Laoghaire Harbour",
+        "latitude": 53.2944,
+        "longitude": -6.1344,
+        "local_address": "Dún Laoghaire, Co. Dublin, Ireland",
+        "star_rating": 4.6,
+        "cost": 0,
+        "region": "dublin"
+    },
+    {
+        "id": 55,
+        "name": "Ardgillan Castle",
+        "latitude": 53.5894,
+        "longitude": -6.1764,
+        "local_address": "Ardgillan Demesne, Balbriggan, Co. Dublin, Ireland",
+        "star_rating": 4.7,
+        "cost": 10,
+        "region": "dublin"
+    },
+    {
+        "id": 56,
+        "name": "Birr Castle",
+        "latitude": 53.0958,
+        "longitude": -7.9132,
+        "local_address": "Birr, Co. Offaly, Ireland",
+        "star_rating": 4.8,
+        "cost": 9,
+        "region": "midlands"
+    },
+    {
+        "id": 57,
+        "name": "Cahir Castle",
+        "latitude": 52.3742,
+        "longitude": -7.9261,
+        "local_address": "Castle St, Cahir, Co. Tipperary, Ireland",
+        "star_rating": 4.6,
+        "cost": 5,
+        "region": "midlands"
+    },
+    {
+        "id": 58,
+        "name": "The English Market",
+        "latitude": 51.8979,
+        "longitude": -8.4741,
+        "local_address": "Grand Parade, Centre, Cork, Ireland",
+        "star_rating": 4.5,
+        "cost": 0,
+        "region": "south"
+    },
+    {
+        "id": 59,
+        "name": "Croke Park Stadium Tour & GAA Museum",
+        "latitude": 53.3607,
+        "longitude": -6.2518,
+        "local_address": "Jones' Rd, Drumcondra, Dublin 3, Ireland",
+        "star_rating": 4.7,
+        "cost": 14,
+        "region": "dublin"
+    },
+    {
+        "id": 60,
+        "name": "Aviva Stadium",
+        "latitude": 53.3350,
+        "longitude": -6.2286,
+        "local_address": "Lansdowne Rd, Dublin 4, Ireland",
+        "star_rating": 4.6,
+        "cost": 15,
+        "region": "dublin"
+    },
+    {
+        "id": 61,
+        "name": "The Hunt Museum",
+        "latitude": 52.6652,
+        "longitude": -8.6252,
+        "local_address": "The Custom House, Rutland St, Limerick, Ireland",
+        "star_rating": 4.5,
+        "cost": 7,
+        "region": "midlands"
+    },
+    {
+        "id": 62,
+        "name": "National Leprechaun Museum",
+        "latitude": 53.3478,
+        "longitude": -6.2673,
+        "local_address": "Jervis St, North City, Dublin, Ireland",
+        "star_rating": 4.4,
+        "cost": 10,
+        "region": "dublin"
+    },
+    {
+        "id": 63,
+        "name": "Dunguaire Castle",
+        "latitude": 53.1356,
+        "longitude": -8.9275,
+        "local_address": "Kinvara, Co. Galway, Ireland",
+        "star_rating": 4.5,
+        "cost": 6,
+        "region": "west"
+    },
+    {
+        "id": 64,
+        "name": "Kinsale",
+        "latitude": 51.7072,
+        "longitude": -8.5306,
+        "local_address": "Co. Cork, Ireland",
+        "star_rating": 4.7,
+        "cost": 0,
+        "region": "south"
+    },
+    {
+        "id": 65,
+        "name": "Carrowmore Megalithic Cemetery",
+        "latitude": 54.2528,
+        "longitude": -8.5281,
+        "local_address": "Carrowmore, Co. Sligo, Ireland",
+        "star_rating": 4.6,
+        "cost": 5,
+        "region": "west"
+    },
+    {
+        "id": 66,
+        "name": "Mizen Head",
+        "latitude": 51.4542,
+        "longitude": -9.7936,
+        "local_address": "Goleen, Co. Cork, Ireland",
+        "star_rating": 4.7,
+        "cost": 7,
+        "region": "south"
+    },
+    {
+        "id": 67,
+        "name": "Boyne Valley",
+        "latitude": 53.7167,
+        "longitude": -6.4167,
+        "local_address": "Co. Meath, Ireland",
+        "star_rating": 4.8,
+        "cost": 0,
+        "region": "east"
+    },
+    {
+        "id": 68,
+        "name": "Hill of Tara",
+        "latitude": 53.5822,
+        "longitude": -6.6101,
+        "local_address": "Co. Meath, Ireland",
+        "star_rating": 4.6,
+        "cost": 0,
+        "region": "east"
+    },
+    {
+        "id": 69,
+        "name": "Beara Peninsula",
+        "latitude": 51.6483,
+        "longitude": -9.8161,
+        "local_address": "Co. Cork, Ireland",
+        "star_rating": 4.8,
+        "cost": 0,
+        "region": "south"
+    },
+    {
+        "id": 70,
+        "name": "Kylemore Abbey",
+        "latitude": 53.5614,
+        "longitude": -9.8903,
+        "local_address": "Kylemore, Co. Galway, Ireland",
+        "star_rating": 4.7,
+        "cost": 13,
+        "region": "west"
+    },
+    {
+        "id": 71,
+        "name": "Clonmacnoise",
+        "latitude": 53.3261,
+        "longitude": -7.9876,
+        "local_address": "Shannonbridge, Co. Offaly, Ireland",
+        "star_rating": 4.7,
+        "cost": 8,
+        "region": "midlands"
+    },
+    {
+        "id": 72,
+        "name": "Ross Castle",
+        "latitude": 52.0417,
+        "longitude": -9.5311,
+        "local_address": "Ross Rd, Ross Island, Killarney, Co. Kerry, Ireland",
+        "star_rating": 4.6,
+        "cost": 5,
+        "region": "south"
+    },
+    {
+        "id": 73,
+        "name": "Lough Key Forest Park",
+        "latitude": 53.9958,
+        "longitude": -8.2181,
+        "local_address": "Boyle, Co. Roscommon, Ireland",
+        "star_rating": 4.6,
+        "cost": 8,
+        "region": "west"
+    },
+    {
+        "id": 74,
+        "name": "Dunbrody Famine Ship",
+        "latitude": 52.3964,
+        "longitude": -6.9575,
+        "local_address": "New Ross, Co. Wexford, Ireland",
+        "star_rating": 4.6,
+        "cost": 9,
+        "region": "east"
+    },
+    {
+        "id": 75,
+        "name": "Céide Fields",
+        "latitude": 54.3072,
+        "longitude": -9.3631,
+        "local_address": "Ballycastle, Co. Mayo, Ireland",
+        "star_rating": 4.5,
+        "cost": 5,
+        "region": "west"
+    }
+]
