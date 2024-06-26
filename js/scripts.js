@@ -4,20 +4,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterRegionSelect = document.getElementById('filter-region');
     const sightseeingList = document.getElementById('sightseeing-list');
 
-    fetch('data/sightseeing.json')
+    if (filterCostInput) {
+        fetch('data/sightseeing.json')
         .then(response => response.json())
         .then(data => {
+            const maxCost = Math.max(...data.map(destination => destination.cost));
+            const minCost = Math.min(...data.map(destination => destination.cost));
+            
+            filterCostInput.max = maxCost;
+            filterCostInput.min = minCost;
+            filterCostInput.value = maxCost;
+
+            costValueLabel.textContent = maxCost;
+
             displaySightseeing(data);
+
             filterCostInput.addEventListener('input', () => {
-                const maxCost = parseFloat(filterCostInput.value);
-                costValueLabel.textContent = maxCost;
-                filterAndDisplaySightseeing(data, maxCost, filterRegionSelect.value);
+                const selectedCost = parseFloat(filterCostInput.value);
+                costValueLabel.textContent = selectedCost;
+                filterAndDisplaySightseeing(data, selectedCost, filterRegionSelect.value);
             });
+
             filterRegionSelect.addEventListener('change', () => {
-                const maxCost = parseFloat(filterCostInput.value);
-                filterAndDisplaySightseeing(data, maxCost, filterRegionSelect.value);
+                const selectedCost = parseFloat(filterCostInput.value);
+                filterAndDisplaySightseeing(data, selectedCost, filterRegionSelect.value);
             });
         });
+    }
+    
+    
 
     function displaySightseeing(destinations) {
         sightseeingList.innerHTML = '';
@@ -63,12 +78,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     function fetchWeather(latitude, longitude) {
-        fetch(`https://weather.apis.ie/forecasts/${latitude},${longitude}`)
+        fetch(`http://metwdb-openaccess.ichec.ie/metno-wdb2ts/locationforecast?lat=${latitude};long=${longitude}`)
             .then(response => response.json())
             .then(data => {
+
+                console.log(data)
+
+                // Process the weather data as needed
+                // Assuming data format based on the API documentation
+                const temperature = data.weather[0].temperature;
+                const precipitation = data.weather[0].precipitation;
+
                 const weatherInfo = `
-                    <p>Temperature: ${data.temperature} °C</p>
-                    <p>Precipitation: ${data.precipitation} mm</p>
+                    <p>Temperature: ${temperature} °C</p>
+                    <p>Precipitation: ${precipitation} mm</p>
                 `;
                 destinationInfo.innerHTML += weatherInfo;
             });

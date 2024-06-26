@@ -71,6 +71,30 @@ h2 {
     color: #2e8b57;
 }
 
+/* Showcase Image */
+.showcase {
+    text-align: center;
+}
+
+.showcase img {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #333;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
 /* Slider Styles */
 input[type="range"] {
     width: 100%;
@@ -111,103 +135,6 @@ li a {
     color: #2e8b57;
     font-weight: bold;
 }
-
-/* Showcase Image */
-.showcase img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Form Styles */
-/* form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 1em;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    font-weight: bold;
-    color: #2e8b57;
-}
-
-form input, form textarea {
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
-}
-
-form input[type="submit"] {
-    background-color: #2e8b57;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    padding: 0.75em;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-form input[type="submit"]:hover {
-    background-color: #276d4b;
-} */
-/* Contact Form Styling */
-form {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-form button {
-    background-color: #008000;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #006400;
-}
-
-.error {
-    color: #ff0000;
-    font-size: 14px;
-}
-
-form {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: url('images/irish-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #333;
-}
-
 
 /* Card Grid Styles */
 .card-grid {
@@ -258,4 +185,54 @@ form {
     .card-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+
+/* Custom Form Styles */
+form {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #008000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #006400;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('images/irish-background.webp');
+    background-size: cover;
+    background-position: center;
+    color: #333;
 }

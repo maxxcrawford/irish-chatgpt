@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Celtic+Hand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <h1>Welcome to Ireland</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="regions.html">Regions</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="sightseeing.html">Sightseeing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
             </ul>
         </nav>
     </header>
@@ -49,80 +50,80 @@
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-        const form = document.getElementById('contact-form');
+    const form = document.getElementById('contact-form');
 
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-            if (validateForm()) {
-                fetch(form.action, {
-                    method: 'POST',
-                    body: new FormData(form),
-                }).then(response => {
-                    if (response.ok) {
-                        alert('Form submitted successfully!');
-                        form.reset();
-                    } else {
-                        alert('There was a problem with the form submission.');
-                    }
-                }).catch(error => {
-                    alert('There was a problem with the form submission: ' + error.message);
-                });
-            }
-        });
-
-        function validateForm() {
-            let isValid = true;
-            clearErrors();
-
-            const name = document.getElementById('name');
-            const email = document.getElementById('email');
-            const phone = document.getElementById('phone');
-            const comments = document.getElementById('comments');
-
-            if (!name.value) {
-                showError('name', 'Name is required.');
-                isValid = false;
-            }
-
-            if (!email.value || !validateEmail(email.value)) {
-                showError('email', 'Valid email is required.');
-                isValid = false;
-            }
-
-            if (phone.value && !validatePhone(phone.value)) {
-                showError('phone', 'Valid phone number is required.');
-                isValid = false;
-            }
-
-            if (!comments.value) {
-                showError('comments', 'Comments are required.');
-                isValid = false;
-            }
-
-            return isValid;
-        }
-
-        function showError(field, message) {
-            const errorElement = document.getElementById(`${field}-error`);
-            errorElement.textContent = message;
-        }
-
-        function clearErrors() {
-            document.querySelectorAll('.error').forEach(errorElement => {
-                errorElement.textContent = '';
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        if (validateForm()) {
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+            }).then(response => {
+                if (response.ok) {
+                    alert('Form submitted successfully!');
+                    form.reset();
+                } else {
+                    alert('There was a problem with the form submission.');
+                }
+            }).catch(error => {
+                alert('There was a problem with the form submission: ' + error.message);
             });
         }
-
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
-
-        function validatePhone(phone) {
-            const re = /^[0-9\-\+]{9,15}$/;
-            return re.test(phone);
-        }
     });
+
+    function validateForm() {
+        let isValid = true;
+        clearErrors();
+
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const phone = document.getElementById('phone');
+        const comments = document.getElementById('comments');
+
+        if (!name.value) {
+            showError('name', 'Name is required.');
+            isValid = false;
+        }
+
+        if (!email.value || !validateEmail(email.value)) {
+            showError('email', 'Valid email is required.');
+            isValid = false;
+        }
+
+        if (phone.value && !validatePhone(phone.value)) {
+            showError('phone', 'Valid phone number is required.');
+            isValid = false;
+        }
+
+        if (!comments.value) {
+            showError('comments', 'Comments are required.');
+            isValid = false;
+        }
+
+        return isValid;
+    }
+
+    function showError(field, message) {
+        const errorElement = document.getElementById(`${field}-error`);
+        errorElement.textContent = message;
+    }
+
+    function clearErrors() {
+        document.querySelectorAll('.error').forEach(errorElement => {
+            errorElement.textContent = '';
+        });
+    }
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    function validatePhone(phone) {
+        const re = /^[0-9\-\+]{9,15}$/;
+        return re.test(phone);
+    }
+});
     </script>
 </body>
 </html>
