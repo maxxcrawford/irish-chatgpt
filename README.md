@@ -1,0 +1,1 @@
+View the full site at: https://maxxcrawford.github.io/irish-chatgpt
